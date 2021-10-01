@@ -17,10 +17,6 @@ header {
         text-decoration: none;
         color: #000;
         padding: 30px 10px;
-        &.active {
-          color: $brand-primary;
-          border-bottom: 4px solid $brand-primary;
-        }
         &:hover {
           color: $brand-primary;
           border-bottom: 4px solid $brand-primary;
