@@ -85,6 +85,22 @@ header ul li a:hover {
   border: none;
 }
 
+.card {
+  flex-basis: 16.6666666667%;
+  padding-bottom: 40px;
+}
+.card figure {
+  width: 160px;
+  max-height: 160px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.card figcaption {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 160px;
+}
+
 #shop {
   height: 100px;
   background-color: #0282f9;
