@@ -1,4 +1,4 @@
-header {
+.bottom-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +8,7 @@ header {
   }
   ul {
     display: flex;
+    align-items: flex-end;
     li {
       list-style-type: none;
       text-transform: uppercase;
@@ -24,4 +25,42 @@ header {
       }
     }
   }
+  &>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  span {
+    color: $brand-primary;
+  }
+  input {
+    text-align: end;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid $brand-primary;
+    padding: 5px 20px;
+    display: inline-block;
+    width: 150px;
+    outline: none;
+  }
+  i {
+    position: absolute;
+    right: 0;
+  }
 }
+
+.top-bar {
+  height: 20px;
+  background-color: $brand-primary;
+  .container {
+    text-align: end;
+    line-height: 20px;
+    font-size: .6rem;
+    a {
+      color: $brand-text;
+      text-decoration: none;
+      margin-left: 50px;
+    }
+  }
+}
+
