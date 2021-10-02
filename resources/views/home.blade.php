@@ -4,14 +4,18 @@
   <section id="content">
     <div class="container">
       <div class="title">CURRENT SERIES</div>
-      @foreach ($series as $serie)
-      <div class="card">
-        <figure>
-          <img src="{{ $serie['thumb']}}" alt="{{ $serie['series']}}">
-        </figure>
-        <figcaption>{{ $serie['series']}}</figcaption>
+      <div class="cards-container">
+        @foreach ($series as $serie)
+        <div class="card">
+          <a href="{{ route('single') }}">
+            <figure>
+              <img src="{{ $serie['thumb']}}" alt="{{ $serie['series']}}">
+            </figure>
+            <figcaption>{{ $serie['series']}}</figcaption>
+          </a>
+        </div>
+        @endforeach
       </div>
-      @endforeach
       <button>LOAD MORE</button>
     </div>
   </section>
