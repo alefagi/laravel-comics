@@ -7,20 +7,20 @@
   </div>
   <div class="bottom-bar container">
     <figure>
-      <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo">
+      <a href="{{ url('/')}}"><img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo"></a>
     </figure>
     <nav>
       <ul>
-        <li><a href="#">Characters</a></li>
-        <li><a href="#">Comics</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">Collectibles</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Fans</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Shop <span>&#9207;</span></a></li>
+        <li><a href="{{ route('characters')}}">Characters</a></li>
+        <li><a href="{{ url('/')}}">Comics</a></li>
+        <li><a href="{{ route('movies')}}">Movies</a></li>
+        <li><a href="{{ route('tv')}}">TV</a></li>
+        <li><a href="{{ route('games')}}">Games</a></li>
+        <li><a href="{{ route('collectibles')}}">Collectibles</a></li>
+        <li><a href="{{ route('videos')}}">Videos</a></li>
+        <li><a href="{{ route('fans')}}">Fans</a></li>
+        <li><a href="{{ route('news')}}">News</a></li>
+        <li><a href="{{ route('shop')}}">Shop <span>&#9207;</span></a></li>
       </ul>
     </nav>
     <div>
