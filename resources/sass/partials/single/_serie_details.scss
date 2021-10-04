@@ -21,15 +21,15 @@
   .specs > * {
     border-bottom: 1px solid #cfc0a4;
   }
-  .primary {
-    color: $brand-primary;
-  }
   .detail {
     display: flex;
     width: 100%;
     padding: 5px 0;
     h5 {
       width: 30%;
+    }
+    p {
+      width: 70%;
     }
   }
 }

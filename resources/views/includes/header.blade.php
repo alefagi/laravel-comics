@@ -12,7 +12,7 @@
     <nav>
       <ul>
         <li><a href="{{ route('characters')}}">Characters</a></li>
-        <li><a href="{{ url('/')}}">Comics</a></li>
+        <li><a href="{{ route('comics')}}">Comics</a></li>
         <li><a href="{{ route('movies')}}">Movies</a></li>
         <li><a href="{{ route('tv')}}">TV</a></li>
         <li><a href="{{ route('games')}}">Games</a></li>

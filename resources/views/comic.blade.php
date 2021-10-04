@@ -1,20 +1,22 @@
 @extends('layouts.main')
 
+@section('title', 'Comic')
+
 @section('content')
   <div class="serie-buy">
     <div class="container-small">
       <div class="description">
-        <h2>{{ $series[0]['title']}}</h2>
+        <h2 class="text-uppercase">{{ $comic['title']}}</h2>
         <div class="serie-price">
           <div>
-            <span>U.S. Price: <strong>{{ $series[0]['price']}}</strong></span>
+            <span>U.S. Price: <strong>{{ $comic['price']}}</strong></span>
             <span>AVAILABLE</span>
           </div>
           <div>
             <a href="#">Check Availability &#9207;</a>
           </div>
         </div>
-        <p>{{ $series[0]['description']}}</p>
+        <p>{{ $comic['description']}}</p>
       </div>
       <div class="advertisement">
         <h4>ADVERTISEMENT</h4>
@@ -32,26 +34,26 @@
           <h3>Talent</h3>
           <div class="detail">
             <h5>Art by:</h5>
-            <p class="primary">{{ $series[0]['artists'][0]}}</p>
+            <p class="text-primary">{{ implode(', ', $comic['artists'])}}</p>
           </div>
           <div class="detail">
             <h5>Written by:</h5>
-            <p class="primary">{{ $series[0]['writers'][0]}}</p>
+            <p class="text-primary">{{ implode(', ', $comic['writers'])}}</p>
           </div>
         </div>
         <div class="specs">
           <h3>Specs</h3>
           <div class="detail">
             <h5>Series:</h5>
-            <p class="primary">{{ $series[0]['series']}}</p>
+            <p class="text-primary text-uppercase">{{ $comic['series']}}</p>
           </div>
           <div class="detail">
             <h5>U.S. Price:</h5>
-            <p>{{ $series[0]['price']}}</p>
+            <p>{{ $comic['price']}}</p>
           </div>
           <div class="detail">
             <h5>On Sale Date:</h5>
-            <p>{{ $series[0]['sale_date']}}</p>
+            <p>{{ $comic['sale_date']}}</p>
           </div>
         </div>
       </div>

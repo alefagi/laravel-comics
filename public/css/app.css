@@ -23,6 +23,14 @@ img {
   margin: 0 auto;
 }
 
+.text-primary {
+  color: #0282f9;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .bottom-bar {
   display: flex;
   justify-content: space-between;
@@ -279,9 +287,6 @@ img {
   width: 80%;
   margin-right: 50px;
 }
-.description h2 {
-  text-transform: uppercase;
-}
 .description .serie-price {
   display: flex;
   background-color: #55ba59;
@@ -340,9 +345,6 @@ img {
 #details-top .specs > * {
   border-bottom: 1px solid #cfc0a4;
 }
-#details-top .primary {
-  color: #0282f9;
-}
 #details-top .detail {
   display: flex;
   width: 100%;
@@ -350,6 +352,9 @@ img {
 }
 #details-top .detail h5 {
   width: 30%;
+}
+#details-top .detail p {
+  width: 70%;
 }
 
 #details-bottom {

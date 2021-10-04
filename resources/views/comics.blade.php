@@ -1,17 +1,19 @@
 @extends('layouts.main')
 
+@section('title', 'Comics')
+
 @section('content')
   <section id="content">
     <div class="container">
       <div class="title">CURRENT SERIES</div>
       <div class="cards-container">
-        @foreach ($series as $serie)
+        @foreach ($comics as $comic)
         <div class="card">
-          <a href="{{ route('single') }}">
+          <a href="{{ route('comic', ['id' => $loop->index]) }}">
             <figure>
-              <img src="{{ $serie['thumb']}}" alt="{{ $serie['series']}}">
+              <img src="{{ $comic['thumb']}}" alt="{{ $comic['series']}}">
             </figure>
-            <figcaption>{{ $serie['series']}}</figcaption>
+            <figcaption>{{ $comic['series']}}</figcaption>
           </a>
         </div>
         @endforeach
