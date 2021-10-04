@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="serie-buy">
-    <div class="container">
+    <div class="container-small">
       <div class="description">
         <h2>{{ $series[0]['title']}}</h2>
         <div class="serie-price">
@@ -11,7 +11,7 @@
             <span>AVAILABLE</span>
           </div>
           <div>
-            Check Availability &#9207;
+            <a href="#">Check Availability &#9207;</a>
           </div>
         </div>
         <p>{{ $series[0]['description']}}</p>

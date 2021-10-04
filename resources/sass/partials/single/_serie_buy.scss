@@ -1,7 +1,53 @@
 .serie-buy {
   padding: 50px 0;
-  .container {
+  .container-small {
     display: flex;
   }
 }
+
+.description {
+  width: 80%;
+  margin-right: 50px;
+  h2 {
+    text-transform: uppercase;
+  }
+  .serie-price {
+    display: flex;
+    background-color: #55ba59;
+    color: white;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+
+    & div:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      border-right: 1px solid black;
+      height: 100%;
+      padding: 0 20px;
+    }
+    & div:last-child {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+.advertisement {
+  text-align: end;
+}
+
   
