@@ -31,6 +31,11 @@ img {
   text-transform: uppercase;
 }
 
+.active {
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
+}
+
 .bottom-bar {
   display: flex;
   justify-content: space-between;
@@ -52,7 +57,6 @@ img {
 }
 .bottom-bar ul li a {
   text-decoration: none;
-  color: #000;
   padding: 30px 10px;
 }
 .bottom-bar ul li a:hover {
