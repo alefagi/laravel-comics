@@ -315,3 +315,72 @@ img {
 .advertisement {
   text-align: end;
 }
+
+.serie-details {
+  background-color: #f6f6f6;
+}
+
+#details-top {
+  border-top: 1px solid #cfc0a4;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+#details-top .container-small {
+  display: flex;
+  justify-content: space-between;
+}
+#details-top h3 {
+  padding-bottom: 20px;
+}
+#details-top .talent,
+#details-top .specs {
+  flex-basis: 47%;
+}
+#details-top .talent > *,
+#details-top .specs > * {
+  border-bottom: 1px solid #cfc0a4;
+}
+#details-top .primary {
+  color: #0282f9;
+}
+#details-top .detail {
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+}
+#details-top .detail h5 {
+  width: 30%;
+}
+
+#details-bottom {
+  border-top: 1px solid #cfc0a4;
+}
+#details-bottom .container-small {
+  display: flex;
+}
+#details-bottom .container-small a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #cfc0a4;
+  border-top: none;
+  padding: 10px;
+}
+#details-bottom .container-small a figure {
+  height: 40px;
+  width: 40px;
+  display: flex;
+}
+#details-bottom .container-small a figure img {
+  filter: invert(20%);
+}
+#details-bottom .container-small a span {
+  color: #a0a0a0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-left: 5px;
+  align-self: flex-start;
+}
